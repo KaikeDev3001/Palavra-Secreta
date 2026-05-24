@@ -1,0 +1,27 @@
+.start {
+    /* Nome da animação | duração | velocidade */
+    animation: smoothEntry 1.6s ease; 
+}
+/* Criação da animação */
+@keyframes smoothEntry {
+  from { /* Estado inicial */
+    opacity: 0; /* Invisível */
+    filter: blur(15px);  /* Desfocado */
+    transform: translateY(180px); /* Mais abaixo */
+  }
+
+  to {  /* Estado final */
+    opacity: 1; /* Visível */
+    filter: blur(0); /* Sem blur */
+    transform: translateY(0); /* Posição normal */
+  }
+}
+
+.start h1 {
+    font-size: 3.5rem;
+}
+
+.start p {
+    margin-bottom: 2rem;
+    color: #ecfa00;
+}
